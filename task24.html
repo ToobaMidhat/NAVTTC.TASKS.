@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hide and Show Example</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+  p {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<p>Your smile is a melody that fills the air with the sweetest of tunes, painting the world with hues of joy and grace.</p>
+<button id="hideBtn">Hide</button>
+<button id="showBtn">Show</button>
+
+<script>
+$(document).ready(function(){
+  // Hide the paragraph initially
+  $("p").hide();
+  
+  // Show the paragraph when the "show" button is clicked
+  $("#showBtn").click(function(){
+    $("p").show();
+  });
+  
+  // Hide the paragraph when the "hide" button is clicked
+  $("#hideBtn").click(function(){
+    $("p").hide();
+  });
+});
+</script>
+
+</body>
+</html>

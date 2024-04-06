@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting</title>
+</head>
+<body>
+    <script>
+        // Get the current hour
+        var currentHour = new Date().getHours();
+
+        // Display "Good Morning" if the current hour is less than 12
+        if (currentHour < 12) {
+            document.write("Good Morning");
+        } 
+        // Display "Good Afternoon" if the current hour is 12 or greater but less than 18
+        else if (currentHour < 18) {
+            document.write("Good Afternoon");
+        } 
+        // Display "Good Evening" if the current hour is 18 or greater but less than 24
+        else {
+            document.write("Good Evening");
+        }
+    </script>
+</body>
+</html>

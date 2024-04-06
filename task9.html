@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Color on Click</title>
+    <style>
+        /* Define initial text color */
+        #myText {
+            color: rgb(200, 60, 60);
+        }
+    </style>
+</head>
+<body>
+    <!-- Add a paragraph with an id for easy access -->
+    <p id="myText" onclick="changeColor()">Click me to change my color!</p>
+
+    <script>
+        function changeColor() {
+            // Get the element by its id
+            var textElement = document.getElementById("myText");
+
+            // Generate a random color
+            var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+            // Set the text color to the random color
+            textElement.style.color = randomColor;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin:0;
+        padding:0;
+        background-color: #131413;
+    
+    h1{
+        background-color: #6bdfdd;
+        margin-top: 10px;
+        height :50px;
+       font-size: 40px;
+       font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+        max-width: 700px;
+        margin:60px auto ;
+        background-color: #f9f2f6;
+        padding:40;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border: 50px solid #f9f2f6;
+    }
+    }
+    .form-group{
+        margin-bottom: 20px;
+        display: grid;
+    }
+    .form-group label{
+        font-weight: bold;
+        border:1px solid #d9d4d7;
+        border-radius:5px ;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group textarea,
+    .form-group select,
+    .form-group div{
+        grid-column: span 1;
+        padding:10px;
+        border:1px solid #ddd9dc;
+        border-radius:5px;
+    }
+    .form-group select{
+        width:calc(100% - 22px);
+    }
+    .form-group .hobbies-container{
+        grid-column: span 2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form-group .hobbies-container div{
+        margin-right: 10px;
+    }
+    .btn-group{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .btn{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color:#fff;
+        cursor: pointer;
+    }
+    .btn :hover{
+        background-color: #0056b3;
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="#">
+            <center><h1>DATA TABLE</h1></center>
+            <div class="form-group">
+                <label for="name">Name </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+               
+                <label for="email">Email</label>
+                <input type="email"id="email"name="email" placeholder="Enter your email" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+               
+                <label for="address">Address</label>
+               <textarea name="address" id="address" placeholder="Complete address"></textarea>
+                <label for="country">Country </label>
+                <select id="country" id="country" name="country">
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Canada">Canada</option>
+                    <option value="India">India</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Pakistan" selected>Pakistan</option>
+                </select>
+                <label>Gender</label>
+                <div class="gender-container">
+                    <input type="radio" value="male" id="male" name="gender" required>
+                    <label for="male">Male</label>
+                    <input type="radio" value="female" id="female" name="gender" required>
+                    <label for="female">Female</label>
+                </div>
+                <label>Hobbies </label>
+                <div class="hobbies-container">
+                    <div>
+                        <input type="checkbox" id="reading" name="hobbies" value="reading">
+                        <label for="reading">Reading</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="listening music" name="hobbies" value="listening music">
+                        <label for="listening music">Listening Music</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="gardening" name="hobbies" value="gardening">
+                        <label for="gardening">Gardening</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="swimming" name="hobbies" value="swimming">
+                        <label for="swimming">Swimming</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="athletics" name="hobbies" value="athletics">
+                        <label for="athletics">athletics</label>
+                    </div>
+                </div>
+                <label for="website">Your Website</label>
+                <input type="url" id="website" name="website" placeholder="http://">
+                <label for="information">Other information about you</label>
+                <textarea name="feedback" id="information" rows="3" ></textarea>
+            </div>
+            <div class="btn-group">
+                <input type="image" src="https://tse3.mm.bing.net/th?id=OIP.iVWaJ-BbwCuewRSVDzTHOQHaEH&pid=Api&P=0&h=220" alt="submit" class="submit-btn" width="100">
+                <input type="image" src="https://tse1.mm.bing.net/th?id=OIP.ZHvxgQGPXa_NUrtuM31UWQHaEK&pid=Api&P=0&h=220" alt="reset" class="reset-btn" width="100">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

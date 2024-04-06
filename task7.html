@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons with Images</title>
+    <style>
+        /* Style for the buttons */
+        .button {
+            display: inline-block;
+            border: none;
+            padding: 0;
+            background: transparent;
+            cursor: pointer;
+            outline: none;
+        }
+
+        /* Style for the submit button */
+        #submitBtn {
+            background-image: url('submit-icon.png'); /* Specify the path to your submit button image */
+            width: 120px; /* Set the width of the button */
+            height: 40px; /* Set the height of the button */
+            background-size: cover; /* Ensure the image covers the button */
+        }
+
+        /* Style for the reset button */
+        #resetBtn {
+            background-image: url('reset-icon.png'); /* Specify the path to your reset button image */
+            width: 120px; /* Set the width of the button */
+            height: 40px; /* Set the height of the button */
+            background-size: cover; /* Ensure the image covers the button */
+        }
+    </style>
+</head>
+<body>
+    <h2>Form with Buttons</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="Pakistan" selected>Pakistan</option>
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+            <option value="Germany">Germany</option>
+            <option value="Japan">Japan</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United States">United States</option>
+        </select><br><br>
+
+        <label for="report">Report:</label><br>
+        <textarea id="report" name="report" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Submit button with image -->
+        <button type="submit" class="button" id="submitBtn"></button>
+
+        <!-- Reset button with image -->
+        <button type="reset" class="button" id="resetBtn"></button>
+    </form>
+</body>
+</html>

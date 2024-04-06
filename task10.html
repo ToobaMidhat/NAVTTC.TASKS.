@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image Position on Mouse Over</title>
+    <style>
+        /* Define initial position of the image */
+        #myImage {
+            position: relative;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Add an image with an id for easy access -->
+    <img id="myImage" src="https://tse2.explicit.bing.net/th?id=OIP.jBemOsB7WTnPQlKbbgfmhQHaE8&pid=Api&P=0&h=220" alt="Your Image" onmouseover="changePosition()">
+
+    <script>
+        function changePosition() {
+            // Get the image element by its id
+            var imageElement = document.getElementById("myImage");
+
+            // Change the position of the image
+            // For example, you can set it to move to the right by 100 pixels
+            imageElement.style.left = "100px";
+        }
+    </script>
+</body>
+</html>

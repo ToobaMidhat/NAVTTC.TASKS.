@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Navigation Bars</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Top Navigation Bar */
+        .top-navbar {
+            background-color: #2980b9; /* Blue */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+        }
+        
+        .top-navbar a {
+            color: #fff; /* White */
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .top-navbar a:hover {
+            background-color: #34495e; /* Darker Blue */
+        }
+        
+        /* Side Navigation Bar */
+        #side-navbar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            left: 0;
+            background-color: #2ecc71; /* Green */
+            padding-top: 20px;
+        }
+        
+        #side-navbar a {
+            display: block;
+            padding: 10px;
+            color: #fff; /* White */
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            border-bottom: 1px solid #fff; /* White */
+        }
+        
+        #side-navbar a:last-child {
+            border-bottom: none;
+        }
+        
+        #side-navbar a:hover {
+            background-color: #27ae60; /* Darker Green */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="side-navbar">
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+    </div>
+</body>
+</html>
